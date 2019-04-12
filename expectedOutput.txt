@@ -1,0 +1,18 @@
+
+=== Test 1 (basic set/get)===
+set foo:bar
+getFoo == bar: true
+resp: bar
+
+=== Test 2 (basic set/get)===
+set foo:bar2
+getFoo == bar: true
+resp: bar2
+
+=== Test 3 (set with ttl)===
+set foo:bar3 with ttl 5 seconds
+immediately get foo: getFoo == bar3: true
+resp: bar3
+after 1 second get foo: getFoo == bar3: true
+after 4 second get foo: getFoo == bar3: true
+after 6 second get foo: (should have expired): getFoo == nil : true
