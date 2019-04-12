@@ -7,6 +7,7 @@ https://notafraidofwong.blogspot.com/2019/01/redis-quick-start-to-redis.html
 1. Run redis-server-<version num>.exe  
 
 2. Install JRuby (or Ruby) with Bundler (if not already)
+	 - to install bundler, run 'gem install bundler'
 
 3. Run 'bundle install'
 
