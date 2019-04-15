@@ -11,14 +11,13 @@ https://notafraidofwong.blogspot.com/2019/01/redis-quick-start-to-redis.html
 
 3. Run 'bundle install'
 
-4. Run 'jruby RedisHelper.rb' (or ruby RedisHelper.rb)
+4. rspec spec/<any file>.rb
 
 ### Using CLI
 
 5. Run redis-cli-<version num>.exe
 
 6. Run basic redis commands to the server.
-
 
 ## Updating Redis
 
