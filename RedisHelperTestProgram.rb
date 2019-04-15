@@ -17,7 +17,7 @@ puts "resp: #{redisHelper.get('foo', request_id)}"
 
 puts "\n=== Test 3 (set with ttl)==="
 puts "set foo:bar3 with ttl 5 seconds"
-redisHelper.set_with_expire('foo', 'bar3', '5', request_id)
+redisHelper.set_with_expire_secs('foo', 'bar3', '5', request_id)
 puts "immediately get foo: getFoo == bar3: #{redisHelper.get('foo', request_id) === 'bar3'}"
 puts "resp: #{redisHelper.get('foo', request_id)}"
 

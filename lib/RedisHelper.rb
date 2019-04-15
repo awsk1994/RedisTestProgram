@@ -5,13 +5,12 @@ class RedisHelper
 		@redis_conn = Redis.new(host: server, port: port)	# Connection is not made yet.
 	end
 
+	# Redis Functions
 	def set(key, value, return_value = false, request_id)
-		if checkConnection(request_id)
-			@redis_conn.set(key, value)
-		end
+		@redis_conn.set(key, value) if checkConnection(request_id)
 	end
 	
-	def set_with_expire(key, value, ttl, request_id)
+	def set_with_expire_secs(key, value, ttl, request_id)
 		if checkConnection(request_id)
 			@redis_conn.set(key, value)
 			ttl = (60 * 60 * 24) if ttl.nil? # expire in 24 hours, by default
@@ -20,11 +19,12 @@ class RedisHelper
 	end
 
 	def get(key, request_id)
-		if checkConnection(request_id)
-			return @redis_conn.get(key)
-		end
+		@redis_conn.get(key) if checkConnection(request_id)
 	end
 
+
+	# Redis Utility Functions
+	#
 	def checkConnection(request_id)
 		begin
 			@redis_conn.ping				# Check Redis server is up.
