@@ -42,10 +42,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="493">
+                <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/RedisDeleteCronJobTest.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+            <state relative-caret-position="187">
+              <caret line="11" column="65" lean-forward="true" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -81,16 +93,16 @@
       <find>redis_conn</find>
       <find>redis_connection</find>
       <find>it</find>
-      <find>cron_job</find>
       <find>it '</find>
+      <find>cron_job</find>
     </findStrings>
     <replaceStrings>
       <replace>:all</replace>
       <replace>$redis_conn</replace>
       <replace>redis_conn</replace>
       <replace>redis_conn()</replace>
-      <replace>@cron_job</replace>
       <replace>@redis_connection</replace>
+      <replace>@cron_job</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -100,7 +112,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/spec/get_set_spec.rb" />
         <option value="$USER_HOME$/Perforce/awong_BIL-L-AWONG2_3184/Preempt/ATM/dev/26.1/core/lib/instances_handler.rb" />
         <option value="$PROJECT_DIR$/spec/RedisHelperTest.rb" />
@@ -112,6 +123,7 @@
         <option value="$PROJECT_DIR$/spec/RedisMethodsTest.rb" />
         <option value="$PROJECT_DIR$/lib/RedisDeleteHashCronJob.rb" />
         <option value="$PROJECT_DIR$/spec/RedisDeleteCronJobTest.rb" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -180,12 +192,12 @@
       <option name="presentableId" value="Default" />
       <updated>1555357961109</updated>
       <workItem from="1555357985705" duration="2992000" />
-      <workItem from="1555699611910" duration="12549000" />
+      <workItem from="1555699611910" duration="12779000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15541000" />
+    <option name="totallyTimeSpent" value="15771000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -251,16 +263,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="238">
-            <caret line="14" selection-start-line="14" selection-end-line="14" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/RedisHelper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -284,8 +286,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/RedisDeleteCronJobTest.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        <state relative-caret-position="187">
+          <caret line="11" column="65" lean-forward="true" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="493">
+            <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

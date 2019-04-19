@@ -11,7 +11,7 @@ https://notafraidofwong.blogspot.com/2019/01/redis-quick-start-to-redis.html
 
 3. Run 'bundle install'
 
-4. rspec spec/<any file>.rb
+4. rspec spec/\<any test file\>.rb
 
 ### Using CLI
 
@@ -26,3 +26,13 @@ https://notafraidofwong.blogspot.com/2019/01/redis-quick-start-to-redis.html
 2. Unzip.
 
 3. Run redis-server.exe
+
+# What is RedisDeleteHasCronJob?
+
+Although there is a EXPIRE method for normal key-value in redis, there is no such method for the value of a hash (in Redis). Therefore, an alternative method is to create a cron job, iterate the hash values and delete them manually. 
+
+## Advantages
+
+ - Can log all the deletions.
+ 
+ - More control over delete condition.
